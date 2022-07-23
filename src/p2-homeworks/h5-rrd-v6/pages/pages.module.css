@@ -1,0 +1,62 @@
+.link {
+    margin: 10px;
+    color: yellow;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.linksContainer {
+
+    height: 30px;
+    max-width: 280px;
+    background-color: darkblue;
+    position: relative;
+    right: 250px;
+    overflow: hidden;
+    transition: all 1.5s ease 0s;
+    opacity: 0.5;
+}
+
+.linksContainer:hover {
+    right: 0;
+    opacity: 0.7;
+}
+
+.linksContainer:after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    content: '';
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    cursor: pointer;
+}
+
+.wrapper {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.title {
+    color: darkgray;
+    font-size: 109px;
+}
+
+.active {
+    font-weight: 700;
+    color: white;
+    opacity: 1;
+}

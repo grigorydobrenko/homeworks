@@ -1,0 +1,59 @@
+.someClass {
+
+}
+
+.error {
+    border: 1px solid red;
+    outline: none;
+}
+
+.errorBox {
+    height: 30px;
+}
+
+.errorMsg {
+    color: darkred;
+    font-weight: 700;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px
+
+}
+
+.input {
+
+
+    background-color: #80aeed;
+    color: white;
+    border-radius: 5px;
+    outline: none;
+}
+
+.input:focus {
+    outline: none;
+}
+
+
+.btn {
+    background-color: #80aeed;
+    border-radius: 10px;
+    border: 1px solid white;
+    height: 30px;
+    outline: none;
+}
+
+.btn:disabled {
+    background-color: lightgrey;
+
+}
+
+.counter {
+    color: red;
+    font-weight: 700;
+    font-size: 24px;
+    text-shadow: 2px 2px 2px yellow;
+}

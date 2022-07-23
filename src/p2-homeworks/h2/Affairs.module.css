@@ -1,0 +1,72 @@
+
+
+.someClass {
+
+}
+
+
+
+.active {
+    color: white;
+    background-color: coral;
+}
+
+.affair {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    justify-content: space-between;
+    /*margin-bottom: 5px;*/
+
+}
+
+.affair:last-child {
+   margin-bottom: 20px;
+
+}
+
+
+.affairs {
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 30px;
+    max-width: 450px;
+    min-height: 200px;
+    margin: 0 auto;
+    padding: 20px 20px 70px 90px;
+    background-color: sandybrown;
+    opacity: 0.95;
+}
+
+.buttons {
+    display: flex;
+
+    position: absolute;
+    bottom: 20px;
+
+    gap: 5px;
+}
+
+.item {
+    margin-right: 10px;
+}
+
+.high {
+    color: red;
+}
+
+.middle {
+    color: blue;
+
+}
+
+.low {
+    color: green;
+}
+
+.btn {
+    width: 25px;
+    border-radius: 20px;
+    border: 1px solid orange;
+}
+

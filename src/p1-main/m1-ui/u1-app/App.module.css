@@ -1,0 +1,19 @@
+
+body {
+    background: no-repeat url("https://images.pexels.com/photos/172278/pexels-photo-172278.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: cover;
+}
+
+.mainText {
+    text-align: center;
+    color: #75ccdb;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px black;
+    margin-bottom: 10px;
+}
+
+.App {
+    max-width: 700px;
+    overflow: hidden;
+    margin: 0 auto;
+}
