@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import SuperSelect from './common/c5-SuperSelect/SuperSelect'
 import SuperRadio from './common/c6-SuperRadio/SuperRadio'
+import n from "../../p1-main/m1-ui/u1-app/App.module.css";
 
 const arr = ['x', 'y', 'z']
 
@@ -10,7 +11,7 @@ function HW7() {
     return (
         <div>
             <hr/>
-            homeworks 7
+            <div className={n.mainText}>homeworks 7</div>
 
             {/*should work (должно работать)*/}
             <div>
