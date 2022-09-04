@@ -1,10 +1,17 @@
 import React, {useState} from 'react'
 import {homeWorkReducer} from './bll/homeWorkReducer'
 import SuperButton from '../h4/common/c2-SuperButton/SuperButton'
+import n from "../../p1-main/m1-ui/u1-app/App.module.css";
+import s from './HW8.module.css'
 
-// export type UserType =
 
-const initialPeople = [
+export type UserType = {
+    _id: number,
+    name: string,
+    age: number
+}
+
+const initialPeople: Array<UserType> = [
     {_id: 0, name: 'Кот', age: 3},
     {_id: 1, name: 'Александр', age: 66},
     {_id: 2, name: 'Коля', age: 16},
@@ -14,29 +21,34 @@ const initialPeople = [
 ]
 
 function HW8() {
-    const [people, setPeople] = useState<any>(initialPeople) // need to fix any
+    const [people, setPeople] = useState<Array<UserType>>(initialPeople) // need to fix any
 
     // need to fix any
-    const finalPeople = people.map((p: any) => (
-        <div key={p._id}>
-            some name, age
+    const finalPeople = people.map((p: UserType) => (
+        <div key={p._id} className={s.item}>
+            <div>{p.name}</div>
+            <div className={s.age}>{p.age}</div>
         </div>
     ))
 
     const sortUp = () => setPeople(homeWorkReducer(initialPeople, {type: 'sort', payload: 'up'}))
+    const sortDown = () => setPeople(homeWorkReducer(initialPeople, {type: 'sort', payload: 'down'}))
+    const checkAge = () => setPeople(homeWorkReducer(initialPeople, {type: 'check', payload: 18}))
 
     return (
         <div>
             <hr/>
-            homeworks 8
+            <div className={n.mainText}>homeworks 8</div>
+            <div className={s.container}>
+                {/*should work (должно работать)*/}
+                <div className={s.mapped}>{finalPeople}</div>
 
-            {/*should work (должно работать)*/}
-            {finalPeople}
-
-            <div><SuperButton onClick={sortUp}>sort up</SuperButton></div>
-            <div>sort down</div>
-            check 18
-
+                <div className={s.buttons}>
+                    <div><SuperButton onClick={sortUp}>sort up</SuperButton></div>
+                    <div><SuperButton onClick={sortDown}>sort down</SuperButton></div>
+                    <div><SuperButton onClick={checkAge}>check 18</SuperButton></div>
+                </div>
+            </div>
             <hr/>
             {/*для личного творчества, могу проверить*/}
             {/*<AlternativePeople/>*/}
