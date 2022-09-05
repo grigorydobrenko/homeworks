@@ -1,0 +1,37 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    height: 180px;
+}
+.buttons {
+    display: flex;
+    position: absolute;
+    top: 100px
+}
+
+.display {
+    color: goldenrod;
+    border-radius: 50px;
+    background-color: white;
+    margin-bottom: 10px;
+}
+
+.display span,b {
+    display: inline-block;
+    font-size: 20px;
+}
+
+.display span {
+    padding: 5px;
+}
+
+.display b {
+    padding: 5px 0 5px 0;
+}
+
+.date, .date span{
+    font-size: 15px;
+}
