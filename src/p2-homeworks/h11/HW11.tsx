@@ -33,6 +33,7 @@ function HW11() {
                     max={110}
                     step={10}
                     disabled={false}
+                    color={'secondary'}
                 />
 
                 <span>{value2[1]}</span>

@@ -9,6 +9,7 @@ type SuperDoubleRangePropsType = {
     max: number
     step: number
     disabled: boolean
+    color: string
     // min, max, step, disable, ...
 }
 
@@ -40,6 +41,7 @@ const SuperDoubleRange: React.FC<SuperDoubleRangePropsType> = (
             disabled={disabled}
             min={min}
             max={max}
+            color={'secondary'}
             // getAriaValueText={valuetext}
         />
     )
