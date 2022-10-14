@@ -1,0 +1,16 @@
+.container {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.requestComponents {
+    display: flex;
+    justify-content: center;
+}
+
+.response {
+    background-color: white;
+    padding: 20px 10px;
+    border-radius: 20px;
+    font-size: 27px;
+}
