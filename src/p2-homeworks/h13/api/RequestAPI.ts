@@ -1,4 +1,5 @@
 // @ts-ignore
+
 const url = `https://neko-cafe-back.herokuapp.com/auth/test`
 
 
@@ -14,6 +15,9 @@ export const RequestApi = {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify(body)
-        }).then((res) => res.json())
+        }).then((res) => {
+            console.log(res)
+            return res.json()
+        })
     }
 }

@@ -12,8 +12,17 @@ const Request = () => {
 
     const onClickButton = () => {
         RequestApi.postRequest(checked)
-            .then(data => setStatus(data.errorText))
-            .catch(data => setStatus(data.errorText))
+            .then(res => {
+                console.log({...res})
+                console.log(res.info)
+                setStatus(res.errorText)
+
+            })
+            .catch(error => {
+                console.log({...error})
+                console.log({...error.info})
+                setStatus(error.info)
+            })
     }
 
     const onClickCheckBox = () => {
